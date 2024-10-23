@@ -1,0 +1,5 @@
+/usr/local/lib/libgeometry_lib.so
+/usr/local/lib/cmake/geometry_lib/geometry_libConfig.cmake
+/usr/local/include/geometry_lib/geometry_lib.hpp
+/usr/local/share/geometry_lib/environment/library_path.sh
+/usr/local/share/geometry_lib/environment/library_path.dsv

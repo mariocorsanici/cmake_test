@@ -1,0 +1,19 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Trova le dipendenze richieste
+find_dependency(rclcpp)
+find_dependency(std_msgs)
+find_dependency(geometry_msgs)
+find_dependency(Eigen3)
+find_dependency(kdl_parser)
+
+# Specifica le directory di inclusione
+set(geometry_lib_INCLUDE_DIRS "@CMAKE_CURRENT_SOURCE_DIR@/include")
+
+# Specifica il target della libreria
+set(geometry_lib_LIBRARIES "${CMAKE_INSTALL_PREFIX}/lib/libgeometry_lib.so")
+
+# Fornisci le variabili al pacchetto
+mark_as_advanced(geometry_lib_INCLUDE_DIRS geometry_lib_LIBRARIES)
